@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>페이지</title>
+</head>
+<body>
+    <h1>결과 페이지</h1><br><br>
+
+    {% for write in writes %}
+        <br><br>
+        제목 : {{write.title}}<br>
+        본문 : {{write.body}}<br>
+    {% endfor %}
+
+    <a href="{% url 'show_board' %}">board 페이지로 이동</a><br><br>
+
+</body>
+</html>

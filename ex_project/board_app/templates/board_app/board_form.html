@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>후기입력 페이지</title>
+</head>
+<body>
+    <h1>후기입력 페이지</h1><br><br>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        제목 : <input type="text" name="title"><br>
+        본문 : <input type="text" name="body"><br>
+        <input type="submit" value="완료">  
+
+</body>
+</html>
