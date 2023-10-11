@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('info_app.urls')),
-    path('', include('board_app.urls'))
+    path('info/', include('info_app.urls')),
+    path('board/', include('board_app.urls'))
+    # 보통 path '' 를 비워놓지는 않고 구분하기위해 내용을 넣는다.
 ]
